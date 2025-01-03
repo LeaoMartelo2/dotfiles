@@ -7,21 +7,6 @@ local options = {
          python = { "isort", "black" },
     },
 
-    formatters = {
-        ["clang-format"] = {
-            prepend_args = {
-                "-style={ \
-                IndentWidth: 4, \
-                TabWidth: 4, \
-                UseTab: Never, \
-                AccessModifierOffset: 0, \
-                IndentAccessModifiers: true, \
-                PackConstructorInitializers: Never, \
-                ColumnLimit: 0}",
-            },
-        },
-    },
-
     format_on_save = {
         -- These options will be passed to conform.format()
         timeout_ms = 500,
