@@ -2,7 +2,7 @@
 
 ## project setup script
 ```
-wget
+wget https://raw.githubusercontent.com/LeaoMartelo2/dotfiles/main/project_setup/project.sh
 ```
 
 ## clang-format
