@@ -99,11 +99,11 @@
     },
     "custom/firefox":{
         "format":"\udb80\ude39",
-        "on-click": "firefox"
+        "on-click": "gtk-launch librewolf"
     },
     "custom/dolphin":{
         "format":"\uf07b",
-        "on-click": "dolphin"
+        "on-click": "thunar"
     },
 
     "hyprland/workspaces" : {
