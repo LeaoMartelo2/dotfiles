@@ -201,9 +201,7 @@ exec_always kwalletd5
 bindsym $mod+Shift+s exec flameshot gui
 
 
-exec_always wl-paste --type text --watch cliphist store 
-exec_always wl-paste --type image --watch cliphist store
 
-exec cliphist wipe
+exec greenclip daemon
 
-bindsym $mod+v exec cliphist list | rofi -dmenu | cliphistdecode| wl-copy
+bindsym $mod+v exec rofi -modi "clipboard: greenclip print" -show clipboard -run-command '{cmd}'
