@@ -7,7 +7,7 @@ local lspconfig = require("lspconfig")
 -- list of all servers configured.
 lspconfig.servers = {
     "lua_ls",
-    "clangd",
+    -- "clangd",
     -- "gopls",
     -- "pyright",
 }
