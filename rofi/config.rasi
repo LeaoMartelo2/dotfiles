@@ -35,7 +35,7 @@
 configuration {
     modi:                       "drun,run";
     font:                       "Fira Sans 11";
-    show-icons:                 false;
+    show-icons:                 true;
     icon-theme:                 "kora";
     display-drun:               "APPS";
     display-run:                "RUN";
@@ -67,7 +67,7 @@ window {
     anchor:                       north;
     fullscreen:                   false;
     enabled:                      true;
-    /* border-radius:                10px; */
+ /*   border-radius:                10px;*/
     background-color:             transparent;
 }
 

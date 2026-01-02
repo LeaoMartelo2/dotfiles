@@ -1,11 +1,11 @@
 invertYMouse:false
-mouseSensitivity:0.33802816
+mouseSensitivity:0.195
 fov:1.25
 gamma:1.0
 saturation:0.0
-renderDistance:6
+renderDistance:8
 guiScale:2
-particles:2
+particles:0
 bobView:false
 anaglyph3d:false
 maxFps:250
@@ -14,17 +14,17 @@ difficulty:3
 fancyGraphics:false
 ao:0
 renderClouds:false
-resourcePacks:["! §b§lBombies §8[§f180k§8].zip"]
+resourcePacks:["! §3defrosted §8[§f16x§8].zip"]
 incompatibleResourcePacks:[]
-lastServer:mininicosmp.enxada.host
-lang:en_us
+lastServer:play.hypixel.net
+lang:en_US
 chatVisibility:0
 chatColors:true
 chatLinks:true
 chatLinksPrompt:true
 chatOpacity:1.0
-snooperEnabled:true
-fullscreen:true
+snooperEnabled:false
+fullscreen:false
 enableVsync:false
 useVbo:true
 hideServerAddress:false
@@ -72,7 +72,7 @@ key_key.chat:20
 key_key.playerlist:15
 key_key.pickItem:-98
 key_key.command:53
-key_key.screenshot:66
+key_key.screenshot:60
 key_key.togglePerspective:63
 key_key.smoothCamera:0
 key_key.streamStartStop:64
@@ -105,21 +105,23 @@ key_Copy NBT:157
 key_§fRecord custom waterboard:0
 key_§fLock Slot:0
 key_§fBind Slots:0
+key_§fToggle Sprint:0
 key_Slot Bind:33
 key_Peek Rooms:0
-soundCategory_master:0.119205296
+key_Click!:209
+soundCategory_master:0.102649
 soundCategory_music:0.0
-soundCategory_record:1.0
+soundCategory_record:0.28169015
 soundCategory_weather:0.04225352
-soundCategory_block:0.06338028
+soundCategory_block:0.049295776
 soundCategory_hostile:0.07746479
 soundCategory_neutral:0.07042254
 soundCategory_player:0.28169015
 soundCategory_ambient:0.06338028
-modelPart_cape:true
+modelPart_cape:false
 modelPart_jacket:true
 modelPart_left_sleeve:true
 modelPart_right_sleeve:true
-modelPart_left_pants_leg:true
+modelPart_left_pants_leg:false
 modelPart_right_pants_leg:true
 modelPart_hat:true

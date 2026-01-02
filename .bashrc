@@ -3,6 +3,8 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+eval "$(ssh-agent -s)" >/dev/null 2>&1
+
 
 ## Bash prompt
 
@@ -18,7 +20,7 @@ alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
-alias mkdir="mkdir -pv"
+# alias mkdir="mkdir -pv"
 
 alias ..="cd .."
 alias ...="cd ../../../"
@@ -33,16 +35,44 @@ alias wfe='cd ~ && cd Dev/editor_wireframe'
 
 QT_QPA_PLATFORMTHEME="qt5ct"
 
+export PATH="$PATH:~/export/tired/"
+export PATH="$PATH:~/export/nestreader/"
+export PATH="$PATH:~/export/kat/"
+export PATH="$PATH:~/export/ctags"
+export PATH="$PATH:~/export/sttym"
+
 
 
 
 export MANPAGER='nvim +Man!'
-export PAGER='nvim +Man!'
-export VISUAL='nvim'
-export EDITOR='nvim'
-
+export EDITOR='vim'
 
 function markdown() {
     pandoc $1 > $1.html
-    xdg-open $1.html
+ #   xdg-open $1.html
+}
+
+bluelight() {
+    case "$1" in
+	on)
+	    redshift -O 3500
+	    ;;
+	off)
+	    redshift -x 
+	    ;;
+	*)
+	echo "Usage: bluelight <on/off>"
+	return 1
+	;;
+    esac
+}
+
+dupe() {
+    local TERMINAL=$TERM 
+
+    if command -v "$TERMINAL" > /dev/null; then
+        "$TERMINAL" --working-directory . &
+    else
+        echo "You fucked up."
+    fi
 }

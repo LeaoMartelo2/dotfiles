@@ -193,8 +193,11 @@ bar {
 # exec_always nitrogen --restore
 exec_always xrandr --output HDMI-A-0 --primary --mode 1366x768 --pos 1366x768 --rotate normal --output DisplayPort-0 --mode 1366x768 --pos 0x0 --rotate normal
 
+# exec pipewire
 
-exec pipewire-media-session &
+# exec pipewire-media-session 
+
+exec pulseaudio
 
 exec_always kwalletd5
 
@@ -202,6 +205,9 @@ bindsym $mod+Shift+s exec flameshot gui
 
 
 
-exec greenclip daemon
+exec_always greenclip daemon
 
 bindsym $mod+v exec rofi -modi "clipboard: greenclip print" -show clipboard -run-command '{cmd}'
+
+
+bindsym $mod+Shift+b exec rofi -show calc -modi calc -no-show-match -no-sort
